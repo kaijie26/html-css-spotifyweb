@@ -21,6 +21,8 @@ body{
 } */
 
 /* Main */
+
+/* Left-Nav-Col */
 main{
     width: 100%;
     height: calc(100vh - 80px);
@@ -40,6 +42,8 @@ main{
     width: calc(100% - 200px);
     overflow-y: auto;
     padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .logo{
@@ -59,6 +63,56 @@ main{
     background-color: lightgray;
     border-radius: 50%;
 }
+
+/* Main-content */
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 12px;
+
+}
+
+.main-menu li{
+    padding-left: 1rem;
+
+}
+
+.music-columns{
+    display: flex;
+}
+
+.music-col{
+    width: calc(100% / 6);
+    padding-right: 1rem;
+
+}
+
+.card-music img{
+    width: 100%;
+
+}
+
+.card-music h3{
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+.card-music div{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.recommend-text{
+    font-size: 0.7rem;
+}
+
+.popular-artist img{
+    border-radius: 50%;
+}
+
 
 /* Footer */
 footer{
