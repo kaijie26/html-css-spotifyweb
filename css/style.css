@@ -253,35 +253,152 @@ h2{
 
 /* Footer */
 footer{
-    background-color: lightgreen;
+    background-color: #282828;
     height: 80px;
     overflow: hidden;
+}
+
+footer ul{
+    list-style-type: none;
 }
 
 .footer-rows ,.row ,.card{
     height: 100%;
 }
 
-.row img{
+.row1 img{
     height: 100%;
+} 
+
+.footer-rows{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem ;
 }
 
-.row .card{
+.row1 .card{
     display: flex;
     align-items: center;
 }
 
-.row{
+/* .row{
+    width: calc(100% / 3);
     padding: 1rem 0.5rem;
+} */
+
+.row1{
+    width: 25%;
 }
+
+.row2{
+    width: 50%;
+}
+
+.row3{
+    width: 25%;
+}
+
 
 .footer-icons{
     padding-left: 2rem;
+    color: #6b6b6b;
 }
 
 .footer-icons :first-child{
     padding-right: 0.3rem;
 }
+
+.command-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.command-list :nth-child(2){
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+}
+
+.command-list :nth-child(4){
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+}
+
+.command-list :nth-child(3){
+    font-size: 25px;
+}
+
+.command-bar-center{
+    display: flex;
+    justify-content: center;
+}
+
+.command-bar-right{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.command-list-right{
+    display: flex;
+    align-items: center;
+}
+
+.command-list-right li{
+    padding-right: 1rem;
+    color: white;
+}
+
+.music-timer-bar :nth-child(2){
+    width: 400px;
+    height: 3px;
+    border-radius: 3px;
+    background-color:#5a5a5a; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.music-timer-bar span{
+    color: white;
+    font-size: 12px;
+}
+
+.music-scored{
+    width: 20%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    
+}
+
+.sound-row{
+    width: 100px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #5a5a5a;
+}
+
+.sound{
+    width: 25%;
+    height: 100%;
+    background-color:white;
+    border-radius: 3px;
+}
+
+.music-playing{
+    padding-left: 1rem;
+}
+ .music-playing h4{
+    color: white;
+    font-size: 13px;
+}
+
+.music-playing div{
+    font-size: 12px;
+    color: #6b6b6b;;
+};
+
 
 /* End Footer */
 
@@ -295,7 +412,7 @@ footer{
     font-size: 20px;
     text-align: right;
     padding-top: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
 }
 
 .btn{
