@@ -23,38 +23,40 @@
                 </div>
                 <!-- User-menu -->
                 <ul class="user-menu">
-                    <li>
-                        <span class="">
+                    <li class="current">
+                        <div>
                             <img src="img/home.svg" alt="home-img">
-                        </span>
-                        <span>Home</span>
+                            <span>Home</span>
+
+                        </div>
+                        
                     </li>
 
-                    <li>
-                        <span class="">
+                    <li class="search">
+                        <div>
                             <img src="img/search.svg" alt="search-img">
-                        </span>
+                        </div>
                         <span>Cerca</span>
                     </li>
 
-                    <li>
-                        <span class="">
+                    <li class="libreria">
+                        <div>
                             <img src="img/libreria.svg" alt="libreria-img">
-                        </span>
+                        </div>
                         <span>La tua libreria</span>
                     </li>
                 </ul>
 
-                <!-- Playlist -->
-                <div>
+                <!-- Playlist-Area -->
+                <div class="playlist-area">
                     <h3>PLAYLIST</h3>
-                    <div>
-                        <span><i class="fa-solid fa-square-plus"></i></span>
+                    <div class="add-playlist">
+                        <span class="plus-square">+</span>
                         <span>Crea Playlist</span>
 
                     </div>
-
-                    <ul>
+                    <!-- Play-list -->
+                    <ul class="play-list">
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -68,17 +70,21 @@
                 </div>
 
                 <!--Download and Profile  -->
-                <div class="download">
-                    <img src="img/download.svg" alt="download-img">
-                    <span>Installa app</span>
-                </div>
+                <div class="last-menu">
+                    <div class="download">
+                        <img src="img/download.svg" alt="download-img">
+                        <span>Installa app</span>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="profile">
+                        <img src="img/profile.svg" alt="profile-img">
+                        <h3>John Doe</h3>
+                    </div>
 
-                <hr>
-
-                <div class="profile">
-                    <img src="img/profile.svg" alt="profile-img">
-                    <span>John Doe</span>
                 </div>
+                
 
             </div>
 
@@ -233,8 +239,52 @@
 
         <!-- Footer -->
         <footer>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quam quis facere est sed pariatur laudantium, illo placeat itaque rerum aperiam quisquam amet nostrum cupiditate quos molestias, eveniet doloribus vero.
+            <div class="footer-rows">
+                <div class="row">
+                    <div class="card">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div>
+                            <h4>Sinister</h4>
+                            <div>Brano nome</div>
+                            
+                        </div>
+
+                        <div class="footer-icons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-folder"></i></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div>
+                            <h4>Sinister</h4>
+                            <div>Brano nome</div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div>
+                            <h4>Sinister</h4>
+                            <div>Brano nome</div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                
             </div>
 
         </footer>

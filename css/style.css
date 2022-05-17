@@ -21,22 +21,146 @@ body{
 } */
 
 /* Main */
-
-/* Left-Nav-Col */
 main{
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
-
 }
 
+/* Left-Nav-Col */
 .left-nav-col{
-    background-color: aquamarine;
+    background-color: black;
     width: 200px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
     
 }
 
+.logo{
+    width: 150px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+}
+
+.playlist-area{
+    flex-grow: 1;
+}
+
+.play-list{
+    overflow-y: auto;
+    height: 60%;
+}
+
+.current div{
+    padding-left: 0.7rem;
+}
+
+.search div{
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.libreria div{
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.current{
+    border-left: 3px solid #a9f533;
+}
+
+.user-menu{
+    list-style-type: none;
+    color: #6b6b6b;
+}
+
+.user-menu img{
+    width: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.playlist-area{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.playlist-area div{
+    padding: 0.5rem 0;
+}
+
+.playlist-area h3{
+    color: white;
+    font-size: 16px;
+}
+
+.plus-square{
+    background-color: #a3a3a3;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.add-playlist :last-child{
+    color: #6b6b6b;
+    font-weight: bold;
+
+}
+
+.play-list{
+    list-style-type: none;
+    line-height: 30px;
+    color: #6b6b6b;
+}
+
+.download img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+.download span{
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.profile img{
+    width: 20px;
+    background-color:#a3a3a3 ;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.last-menu{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+hr{
+    margin: 0.5rem 0;
+    border: none;
+    height: 1px;
+    color: #6b6b6b;
+    background-color: #6b6b6b;;
+}
+
+.download span{
+     color: #6b6b6b;;
+}
+
+.profile h3{
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* Main-content */
 .main-content{
     background-color: bisque;
     width: calc(100% - 200px);
@@ -45,26 +169,6 @@ main{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-.logo{
-    width: 150px;
-}
-
-.user-menu img{
-    width: 30px;
-}
-
-.download img{
-    width: 15px;
-}
-
-.profile img{
-    width: 20px;
-    background-color: lightgray;
-    border-radius: 50%;
-}
-
-/* Main-content */
 
 .main-menu{
     display: flex;
@@ -101,12 +205,12 @@ main{
 }
 
 .card-music div{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 
 .recommend-text{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .popular-artist img{
@@ -119,6 +223,31 @@ footer{
     background-color: lightgreen;
     height: 80px;
     overflow: hidden;
+}
+
+.footer-rows ,.row ,.card{
+    height: 100%;
+}
+
+.row img{
+    height: 100%;
+}
+
+.row .card{
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    padding: 1rem 0.5rem;
+}
+
+.footer-icons{
+    padding-left: 2rem;
+}
+
+.footer-icons :first-child{
+    padding-right: 0.3rem;
 }
 
 /* End Footer */
