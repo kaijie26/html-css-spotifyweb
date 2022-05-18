@@ -44,6 +44,10 @@ main{
     padding-left: 0.7rem;
 }
 
+.logo :last-child{
+    display: none;
+}
+
 .playlist-area{
     flex-grow: 1;
 }
@@ -569,34 +573,133 @@ HOVER
  End Hover
 *********************************************/
 
-
-
-
-
-
-
 /* MD */
 @media screen and (max-width: 1100px) {
+    /* Main */
+    .main-menu{
+        flex-wrap: wrap;
+    }
+
+    .music-list-recently .music-columns{
+        flex-wrap: wrap;
+    }
+
+    .music-list-recently .music-col{
+        width: calc(100% / 4);
+        padding-right: 1rem;
+    
+    }
+
+    /* Upgrade-Banner */
+    .upgrade-banner{
+        z-index: 1;
+    }
     
 }
 
 /* S */
 @media screen and (max-width: 700px) {
+    /* Main */
+    .music-columns{
+        flex-wrap: wrap;
+    }
+
+    .main-menu{
+        flex-wrap: wrap;
+    }
+
+    .music-col{
+        width: calc(100% / 2);
+        padding-right: 1rem;
+    
+    }
+
+    /* Upgrade-Banner */
+    .upgrade-banner{
+        z-index: 1;
+    }
     
 }
 
 /* XS */
 @media screen and (max-width: 600px) {
-    .left-nav-col{
-        width: 70px;
-    }
-
-    .main-content{
+    /* Upgrade-Banner */
+    .upgrade-banner{
         width: calc(100% - 70px);
     }
 
     .upgrade-banner{
+        z-index: 1;
+    }
+
+    /* Main-Content */
+    .main-content{
         width: calc(100% - 70px);
     }
+
+    .music-columns{
+        flex-wrap: wrap;
+    }
+
+    .main-menu{
+        flex-wrap: wrap;
+    }
+
+    .music-col{
+        width: calc(100% / 2);
+        padding-right: 1rem;
     
+    }
+
+     /* Left-Nav-Col */
+     .left-nav-col{
+        width: 70px;
+    }
+
+    .user-menu{
+        flex-grow: 1;
+    }
+    
+    .user-menu li span{
+        display: none;
+    }
+
+    .playlist-area{
+        display: none;
+    }
+
+    .last-menu h3, span, hr{
+        display: none;
+    }
+
+    .logo{
+        width: 50px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.9rem;
+    }
+
+    .logo :first-child{
+        display: none;
+    }
+
+    .logo :last-child{
+        display: inline-block;
+    }
+
+    .current{
+        border-left: none ;
+    }
+
+    .current div{
+        padding-left: 0.9rem;
+
+    }
+
+    .profile img{
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    /* Footer */
 }
