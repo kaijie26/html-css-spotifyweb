@@ -98,18 +98,19 @@ main{
 
 .plus-square{
     background-color: #a3a3a3;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    line-height: 50px;
+    line-height: 20px;
     font-size: 40px;
 }
 
 .add-playlist :last-child{
     color: #6b6b6b;
     font-weight: bold;
+    vertical-align: center;
 
 }
 
@@ -177,14 +178,18 @@ hr{
     font-size: 12px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #6b6b6b;
-    font-weight: bold;
 
 }
 
 .main-menu li{
     padding-left: 1rem;
+    
+}
 
+.main-menu li a{
+    text-decoration: none;
+    color: #6b6b6b;
+    font-weight: bold;
 }
 
 .music-columns{
@@ -196,13 +201,58 @@ hr{
     padding-right: 1rem;
 
 }
+/* .card-music{
+    position: relative;
+} */
+
+.music-img{
+    position: relative;
+}
+
+/**********************************************
+ Hover-Effect
+ **************************************************/
+.hover-effect{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Hover-Effect with border-radius */
+.popular-artist .hover-effect{
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.hover-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+} 
+/**************************************************** 
+End Hover-Effect
+*******************************************************/
 
 .card-music img{
     width: 100%;
 
 }
 
-.card-music h3{
+.music-name h3{
     font-size: 0.9rem;
     text-align: center;
     color: white;
@@ -226,7 +276,7 @@ h2{
     padding-top: 2rem;
 }
 
-.card-music div{
+.music-name{
     font-size: 0.9rem;
     text-align: center;
     color: #6b6b6b;
@@ -249,7 +299,6 @@ h2{
     border-bottom: 3px solid #a9f533;
     border-width: 2px;
 }
-
 
 /* Footer */
 footer{
@@ -350,6 +399,10 @@ footer ul{
     color: white;
 }
 
+.music-timer-bar{
+    position: relative;
+}
+
 .music-timer-bar :nth-child(2){
     width: 400px;
     height: 3px;
@@ -377,6 +430,7 @@ footer ul{
     height: 3px;
     border-radius: 3px;
     background-color: #5a5a5a;
+    position: relative;
 }
 
 .sound{
@@ -384,6 +438,24 @@ footer ul{
     height: 100%;
     background-color:white;
     border-radius: 3px;
+    
+}
+
+.sound .circle{
+    display: none;
+    font-size: 12px;
+    color:white;
+    position: absolute;
+    left: 20%;
+    bottom: -6px;
+}
+
+.music-scored .circle{
+    display: none;
+    color: white;
+    position: absolute;
+    left: 21%;
+    bottom: -2px;
 }
 
 .music-playing{
@@ -396,12 +468,11 @@ footer ul{
 
 .music-playing div{
     font-size: 12px;
-    color: #6b6b6b;;
-};
-
-
+    color: #6b6b6b;
+}
 /* End Footer */
 
+/* Upgrade-Btn */
 .upgrade-banner{
     background-color: rgba(0, 0, 0, 0.5);
     width: calc(100% - 200px);
@@ -424,6 +495,83 @@ footer ul{
     font-size: 10px;
     color: white;
 }
+
+/******************************* 
+HOVER
+********************************/
+/* Main-Content */
+.main-menu li a:hover{
+    color: white;
+}
+
+.music-img:hover .hover-effect {
+    display: inline-block;
+}
+
+/* Left-Nav-Col */
+.user-menu li:hover img, .user-menu li:hover span{
+    color: white;
+    opacity: 1.5;
+}
+
+.add-playlist:hover span {
+    color: white;
+}
+
+.add-playlist:hover div{
+    background-color: white;
+}
+
+.play-list li:hover{
+    color: white;
+}
+
+.download:hover span{
+    color: white;
+}
+
+/* Footer */
+.music-playing:hover div{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-icons :hover{
+    color: white;
+}
+
+.music-timer-bar:hover .music-scored{
+    background-color: #a9f533;
+}
+
+.sound-row:hover .sound{
+    background-color: #a9f533;
+}
+
+.sound-row:hover .circle{
+    display: inline-block;
+}
+
+.music-timer-bar:hover .circle{
+    display: inline-block;
+
+}
+
+.scale-play:hover{
+    transform: scale(1.2);
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+/*********************************************
+ End Hover
+*********************************************/
+
+
+
+
 
 
 
